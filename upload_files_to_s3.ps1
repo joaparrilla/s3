@@ -3,7 +3,7 @@
 
 # Definir las variables
 $fecha = Get-Date -Format "yyyyMMdd"
-$parentBucketName = "backups-databases-gxportal"
+$parentBucketName = "backups-databases"
 $childBucketName = "backup"+$fecha
 $childBucketPrefix = "$childBucketName/"
 $s3Path = "s3://$parentBucketName/$childBucketPrefix"
